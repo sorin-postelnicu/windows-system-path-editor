@@ -9,13 +9,16 @@ So if you are annoyed of having to scroll through this one single long line in o
 For this I have written this extremely short html+js helper page, where you can paste your PATH in the top textarea and it will be automatically split into multiple lines in the bottom textarea. (or vice-versa!)
 
 To use it, follow these simple steps:
-1) Follow the usual steps to get the value of the PATH environment variable (for example: press Windows+Pause/Break -> Advanced -> Environment variables)
-2) Copy the value of the PATH environment variable and paste it in this webpage, in the top textarea
-3) In the bottom textarea you will automatically have your PATH split into multiple lines, and you can edit it as you like
-4) While editing, any changes that you make to either of the two textareas will be automatically reflected in the other textarea
-5) When you are finished editing, copy again the value from the top textarea and paste it in the Windows->Advanced->Environment variables->PATH
+
+1. Follow the usual steps to get the value of the PATH environment variable (for example: press Windows+Pause/Break -> Advanced -> Environment variables)
+2. Copy the value of the PATH environment variable and paste it in this webpage, in the top textarea
+3. In the bottom textarea you will automatically have your PATH split into multiple lines, and you can edit it as you like
+4. While editing, any changes that you make to either of the two textareas will be automatically reflected in the other textarea
+5. When you are finished editing, copy again the value from the top textarea and paste it in the Windows->Advanced->Environment variables->PATH
+
 That's it !
 
 I hope you enjoy this simple tool.
+
 If you like it and you want to support the author of this tool, you can donate Bitcoins here: 18dsHgFbv9wYbSj4bHoks2LSjiEk7fvDnf
 
