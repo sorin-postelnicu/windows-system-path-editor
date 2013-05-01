@@ -1,4 +1,4 @@
-Windows system path editor
+Windows system PATH editor
 ==========================
 
 Simple "editor" for the Windows PATH environment variable. Converts semi-colons to newlines and vice-versa.
