@@ -1,0 +1,44 @@
+<!doctype html>
+<!--
+This software source code is placed by the author under PUBLIC DOMAIN, and you may use it in any way you like.
+It is provided "AS IS", WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+By using this software you accept that the author cannot be held responsible for any damages arising from your use of the software.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Edit Windows system path</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+<body>
+
+<textarea id="path_joined" rows="1" cols="100"></textarea>
+<br/>
+<!--
+<button id="split_button">Split</button>
+<button id="join_button">Join</button>
+<br/>
+-->
+<textarea id="path_split" rows="50" cols="100"></textarea>
+
+<script type="text/javascript">
+  function splitPath(){
+    var pathJoined = $('#path_joined').val();
+    var pathSplit = pathJoined.split(';').join('\n');
+    $('#path_split').val(pathSplit);
+  }
+  function joinPath(){
+    var pathSplit = $('#path_split').val();
+    var pathJoined = pathSplit.split('\n').join(';');
+    $('#path_joined').val(pathJoined);
+  }
+  $(function(){
+    //$('#split_button').click(splitPath);
+    //$('#join_button').click(joinPath);
+    $('#path_joined').bind('change keydown keyup', splitPath);
+    $('#path_split').bind('change keydown keyup', joinPath);
+  });
+</script>
+</body>
+</html>
