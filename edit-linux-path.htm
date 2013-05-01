@@ -7,12 +7,21 @@ By using this software you accept that the author cannot be held responsible for
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Edit Linux Path</title>
+  <title>Edit Linux $PATH</title>
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <style type="text/css">
+    body { font-family: sans-serif; }
+    label { font-weight:bold; }
+  </style>
 </head>
 <body>
 
+<h2>Linux $PATH editor</h2>
+
+<p>Simple "editor" for the Linux PATH environment variable. Converts colons to newlines and vice-versa.</p>
+
+<label for="path_joined">The PATH environment variable (with directories separated by colons):</label><br/>
 <textarea id="path_joined" rows="1" cols="100"></textarea>
 <br/>
 <!--
@@ -20,7 +29,8 @@ By using this software you accept that the author cannot be held responsible for
 <button id="join_button">Join</button>
 <br/>
 -->
-<textarea id="path_split" rows="50" cols="100"></textarea>
+<label for="path_split">The PATH split into multiple lines (one directory per line):</label><br/>
+<textarea id="path_split" rows="35" cols="100"></textarea>
 
 <script type="text/javascript">
   function splitPath(){
@@ -40,5 +50,8 @@ By using this software you accept that the author cannot be held responsible for
     $('#path_split').bind('change keydown keyup', joinPath);
   });
 </script>
+
+<p>If you enjoy this tool and you want to support the author, you can donate (fractions of) Bitcoins here: <strong>1J5UYLoCroaBW14GAAGV9MZgTHY5ip6eY3</strong></p>
+
 </body>
 </html>
