@@ -20,6 +20,3 @@ To use it, follow these simple steps:
 That's it !
 
 I hope you enjoy this simple tool.
-
-If you like it and you want to support the author of this tool, you can donate (fractions of) Bitcoins here: 18dsHgFbv9wYbSj4bHoks2LSjiEk7fvDnf
-
